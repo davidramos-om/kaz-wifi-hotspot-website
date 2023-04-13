@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <% include partials/head %>
+</head>
+
+<body>
+  <noscript>
+    <strong>Lo sentimos, nuestro sitio web no funciona correctamente sin JavaScript habilitado. Por favor habilítelo
+      para continuar.</strong>
+  </noscript>
+
+  <% include partials/menu %>
+    <% include partials/services %>
+      <% include partials/revenue %>
+        <% include partials/features %>
+          <% include partials/features_wall%>
+            <% include partials/precios %>
+              <% include partials/tutorial %>
+                <% include partials/contact %>
+                  <% include partials/footer %>
+
+                    <a id="btotop" href="#" class="back-to-top" style="color: transparent;">Inicio
+                      <i class="lnr lnr-arrow-up"></i>
+                    </a>
+
+                    <div id="loader">
+                      <div class="spinner">
+                        <div class="double-bounce1"></div>
+                        <div class="double-bounce2"></div>
+                      </div>
+                    </div>
+</body>
+<% include partials/script %>
+
+</html>
