@@ -1,0 +1,238 @@
+<header id="hero-area" data-stellar-background-ratio="0.5">
+    <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo" style="background-color: white">
+
+
+        <div class="container" style="padding: 0.5%;">
+            <div>
+                <a id="logo" href="/" class="navbar-brand">
+                    <img class="img-fulid" src="./images/kaz_logo.png" alt="Logo" width="106" height="53">
+                </a>
+            </div>
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
+                    aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="lnr lnr-menu"></i>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="main-navbar">
+                <ul class="navbar-nav mr-auto w-100 justify-content-end">
+                    <li class="nav-item">
+                        <a style="color: black;" class="nav-link page-scroll" href="#hero-area">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color: black;" class="nav-link page-scroll" href="#services">¿Qué es?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color: black;" class="nav-link page-scroll" href="#revenue">Beneficios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color: black;" class="nav-link page-scroll" href="#features">Funcionalidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color: black;" class="nav-link page-scroll" href="#precios">Precios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color: black;" class="nav-link page-scroll" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color: black;" class="nav-link page-scroll" href="#contact">Contáctenos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color: black;" class="nav-link page-scroll" href="/ayuda">Ayuda</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <% if(user){ %>
+                        <a class="nav-link page-scroll" href="/account">Hola, <%= user.name %></a>
+                        <% } else{ %>
+                        <a class="nav-link page-scroll" href="/account">Iniciar sesión</a>
+                        <% } %>
+                    </li> -->
+                    <!-- <a class="nav-link page-scroll" href="<%= faqPage === true ? '/#blog' : '#blog' %>">Blog</a> -->
+                </ul>
+            </div>
+        </div>
+
+        <ul class="mobile-menu" id="nav">
+            <li>
+                <a style="color: black;" class="page-scroll" href="#hero-area">Inicio</a>
+            </li>
+            <li>
+                <a style="color: black;" lass="nav-link page-scroll" href="#services">¿Qué es?</a>
+            </li>
+            <li>
+                <a style="color: black;" lass="nav-link page-scroll" href="#revenue">Beneficios</a>
+            </li>
+            <li>
+                <a style="color: black;" class="nav-link page-scroll" href="#features">Funcionalidades</a>
+            </li>
+            <li>
+                <a style="color: black;" class="nav-link page-scroll" href="#precios">Precios</a>
+            </li>
+            <li>
+                <a style="color: black;" class="nav-link page-scroll" href="#blog">Blog</a>
+            </li>
+            <li>
+                <a style="color: black;" class="nav-link page-scroll" href="#contact">Contáctenos</a>
+            </li>
+            <li>
+                <a style="color: black;" class="nav-link page-scroll" href="/ayuda">Ayuda</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-10">
+                <div class="contents text-center">
+                    <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">Kaz WiFi Hotspot</h1>
+                    <h2 class="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">Gestione el acceso,
+                        tiempo y velocidad de navegación de los clientes en su negocio</h2>
+                    <a href="https://kwh-files.nyc3.digitaloceanspaces.com/kaz-wifi-hotspot.msi"
+                        class="btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
+                        Descargar
+                    </a>
+                    <a href=" #" data-toggle="modal" data-target="#getDemo" class="btn btn-outline-common wow fadeInUp"
+                        data-wow-duration="1000ms" data-wow-delay="400ms">Obtener Licencia</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="getDemo" tabindex="-1" role="dialog" aria-labelledby="titleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="modal-title" id="titleModalLabel" style="color: #333;">Obtener una demostracion</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="color: #333;">
+                        <div id="demoForm">
+                            <div class="form-group">
+
+                                <label for="txtname" class="col-form-label"><small style="color: red;">*</small> Ingrese
+                                    su nombre:</label>
+                                <input type="text" class="form-control" id="txtname" required
+                                    data-error="Por favor ingrese su nombre"
+                                    style="border-color: #61D2B4;color: rgb(78, 75, 75);  ">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtlastname" class="col-form-label"><small style="color: red;">*</small>
+                                    Ingrese su apellido:</label>
+                                <input type="text" class="form-control" id="txtlastname" required
+                                    data-error="Por favor ingrese su apellido"
+                                    style="border-color: #61D2B4;color: rgb(78, 75, 75);">
+                            </div>
+                            <div class=" form-group">
+                                <label for="txtcompany" class="col-form-label"><small style="color: red;">*</small>
+                                    Ingrese el nombre de su empresa o negocio:</label>
+                                <input type="text" class="form-control" id="txtcompany" required
+                                    data-error="Por favor ingrese el nombre de la empresa"
+                                    style="border-color: #61D2B4;color: rgb(78, 75, 75);">
+                            </div>
+                            <div class=" form-group">
+                                <label for="txtcompany" class="col-form-label"><small style="color: red;">*</small>
+                                    Ingrese su correo electrónico:</label>
+                                <input type="text" class="form-control" id="txtemail" required
+                                    data-error="Por favor ingrese su correo"
+                                    style="border-color: #61D2B4;color: rgb(78, 75, 75);">
+                                <small> (Enviaremos su licencia y pasos a seguir)</small>
+                            </div>
+
+                            <div class="submit-button text-center">
+                                <button class="btn btn-common" id="submit_demo" name="demo"
+                                    onclick="RequestLicense()">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="demoLicResult" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="modal-title" id="exampleModalLabel" style="color: #333;">Su licencia</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="alert alert-success" role="alert" id="divLic">
+                            Licencia :
+                        </div>
+                        <div class="alert alert-info" role="alert" id="divClient">
+                            Cliente :
+                        </div>
+                        <div class="alert alert-light" role="alert" id="divEmail">
+                            La información de su licencia y los pasos a continuación también han sido enviado al correo
+                            electrónico proporcionado
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                    <div id="loading"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</header>
+
+<style>
+    #loading {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(192, 192, 192, 0.5);
+        background-image: url("./www/img/loading.gif");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .bg-image {
+        /* The image used */
+        background-image: url('./img/bg/img1.jpg');
+
+        /* Add the blur effect */
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+
+        /* Full height */
+        height: 100%;
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* Position text in the middle of the page/image */
+    .bg-text {
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black w/opacity/see-through */
+        color: white;
+        font-weight: bold;
+        border: 3px solid #f1f1f1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 80%;
+        padding: 20px;
+        text-align: center;
+    }
+</style>
+</style>

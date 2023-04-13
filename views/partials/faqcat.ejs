@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+
+<body>
+    <div id="catalog" />
+
+    <script src="../../"></script>
+    <script src="./js/catalog-standalone.min.js"></script>
+
+    <script>
+        Catalog.render({
+            title: 'Centro de ayuda',
+            // logoSrc : 'images/help_icon.png',
+            pages: [ {
+                path: '/',
+                title: 'Introducción',
+                src: 'docs/intro.md'
+            },
+            {
+                path: '/planes',
+                title: 'Planes',
+                pages: [ {
+                    path: '/planes/demo',
+                    title: 'Demostrativo',
+                    src: 'docs/license/demo.md',
+                },
+                {
+                    path: '/planes/vitalicia',
+                    title: 'Vitalicio',
+                    src: 'docs/license/vitalicia.md',
+                },
+                {
+                    path: '/planes/suscripcion',
+                    title: 'Suscripción',
+                    src: 'docs/license/suscripcion.md',
+                },
+                {
+                    path: '/planes/maximo_demos',
+                    title: '¿Cuántas licencias puedo ingresar?',
+                    src: 'docs/license/maxlic.md',
+                },
+                {
+                    path: '/planes/compartir',
+                    title: '¿Puedo compartir la licencia?',
+                    src: 'docs/license/sharedLic.md',
+                },
+                {
+                    path: '/planes/cant_computadoras',
+                    title: '¿Se puede utilizar varias computadoras?',
+                    src: 'docs/license/maxpc.md',
+                }
+                ],
+            },
+            {
+                path: '/compra',
+                title: 'Proceso de compra',
+                pages: [ {
+                    path: '/compra/como',
+                    title: '¿Como puedo realizar la compra?',
+                    src: 'docs/license/purchase.md',
+                },
+                {
+                    path: '/compra/cuentas',
+                    title: 'Cuentas bancarias',
+                    src: 'docs/license/purchase_banks.md',
+                }
+                ]
+            },
+            {
+                path: '/limitantes',
+                title: 'Limitantes externas',
+                src: 'docs/help/limitations.md'
+            },
+            {
+                path: '/soporte',
+                title: 'Soporte técnico',
+                pages: [ {
+                    path: '/soporte/general',
+                    title: 'Soporte técnico',
+                    src: 'docs/support/support.md',
+                },
+                {
+                    path: '/Soporte/costo',
+                    title: '¿Hay un costo adicional por soporte técnico?',
+                    src: 'docs/support/payment.md',
+                }
+                ],
+
+            },
+            {
+                path: '/requisitos',
+                title: 'Requisitos Técnicos',
+                src: 'docs/help/requirement.md',
+            },
+            {
+                path: '/actualizaciones',
+                title: 'Actualizaciones',
+                src: 'docs/help/updates.md',
+            },
+            {
+                path: '/dudas_equipos_red',
+                title: 'Preguntas frecuentes dispositivos',
+                src: 'docs/support/routerfaq.md',
+            }
+            ]
+        },
+            document.getElementById('catalog'));
+    </script>
+</body>
+
+</html>
