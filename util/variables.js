@@ -6,7 +6,7 @@ module.exports = Object.freeze({
     latest_version: '19.11.01.2240',
     token_secure_key_lic_encrypt: 'KMpoZT@$VrUNf45tZ8eg^rIaZSZ^Pv%*',
     email_license_request: 'Kaz <info@kaz-wifi.com>',
-    email_license_request_cc: [ "davidramos015@gmail.com", "ivanpinto16@gmail.com" ],
+    email_license_request_cc: ["davidramos015@gmail.com"],
     api_url: 'https://kaz-admin-api-riqhf.ondigitalocean.app',
     db_pass_key: 'VJ_KZM_WEBAUTH_DXEXP_2221_OSTRMICEN',
 });
